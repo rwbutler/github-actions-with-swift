@@ -1,0 +1,10 @@
+name: 'GitHub Actions with Swift'
+description: 'Running a Swift script as part of GitHub Action'
+runs:
+  using: 'composite'
+  steps:
+  - name: Hello World
+    run: swift "${{ github.action_path }}/hello-world.swift"
+    shell: bash
+    
+
